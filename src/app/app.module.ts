@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {DropdownDirective}from './shared/dropdown.directive';
 import { AppComponent } from './app.component';
 import {HeaderComponent} from './header/header.component';
 import { RecipesComponent } from './recipes/recipes.component';
@@ -19,7 +19,8 @@ import { FormsModule } from '@angular/forms';
     RecipeDetailComponent,
     RecipeItemComponent,
     ShoppingListComponent,
-    ShoppingEditComponent
+    ShoppingEditComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
