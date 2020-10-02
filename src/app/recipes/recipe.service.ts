@@ -32,6 +32,10 @@ recipeSelected=new EventEmitter<Recipe>();
       getRecipes(){
           return this.recipes.slice();
       }
+
+      getRecipe(index:number){
+        return this.recipes[index];
+      }
 addIngreToShopList( ingredients:Ingredient[]){
 this.slService.addIngre(ingredients);
 }
