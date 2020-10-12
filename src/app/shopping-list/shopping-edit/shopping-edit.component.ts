@@ -32,7 +32,7 @@ editedItem:Ingredient;
       }
     );
   }
-  onAddItem(form:NgForm){
+  onSubmit(form:NgForm){
     const value=form.value;
    const newIngredient=new Ingredient(value.name,value.amount);
    if(this.editMode){
@@ -40,6 +40,8 @@ editedItem:Ingredient;
    }else{
   this.slService.addIngredient(newIngredient);
   }
+  this.editMode=false;
+  form.reset();
   }
   ngOnDestroy(){
     this.subscription.unsubscribe();
