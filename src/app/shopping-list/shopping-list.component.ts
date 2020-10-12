@@ -24,6 +24,10 @@ private igChangeSub:Subscription;
     }
   );
   }
+  editem(index:number){
+    this.slService.startedEditing.next(index);
+
+  }
   
   ngOnDestroy(){
     this.igChangeSub.unsubscribe();
