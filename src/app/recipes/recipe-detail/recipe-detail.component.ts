@@ -25,7 +25,7 @@ this.route.params.subscribe(
   }
 
   AddtoShoppingList(){
-this.recipeService.addIngreToShopList(this.recipe.ingredients);
+this.recipeService.addIngredientsToShopList(this.recipe.ingredients);
   }
 
   onEditRecipe(){
