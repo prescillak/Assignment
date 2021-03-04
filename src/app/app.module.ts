@@ -36,7 +36,7 @@ import{RecipesModule} from './recipes/recipes.module';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    HttpModule,
+    HttpClientModule,
     ReactiveFormsModule,
     HttpClientModule,
     RecipesModule
