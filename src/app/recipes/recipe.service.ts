@@ -47,7 +47,7 @@ setRecipes(recipes:Recipe[]){
         return this.recipes[index];
       }
 addIngredientsToShopList( ingredients:Ingredient[]){
-this.slService.addIngredients(ingredients);
+// this.slService.addIngredients(ingredients);
 }
 
 addRecipe(recipe:Recipe){
