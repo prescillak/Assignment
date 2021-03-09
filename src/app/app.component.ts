@@ -1,4 +1,4 @@
-
+import{LoggingService} from './logging.service';
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from './auth/auth.service';
 
@@ -9,8 +9,9 @@ import { AuthService } from './auth/auth.service';
 })
 export class AppComponent implements OnInit {
  
- constructor(private authService:AuthService){} 
+ constructor(private authService:AuthService, private loggingservice:LoggingService){} 
  ngOnInit(){
     this.authService.autoLogin();
+    this.loggingservice.printlog('Hello from AppComponent ngOnInit');
  }
 }
