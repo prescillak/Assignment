@@ -17,7 +17,7 @@ private subscription:Subscription;
 
   constructor(
     private slService:ShoppingListService, 
-    private loggingservice:LoggingService,
+    private loggingService:LoggingService,
     private store:Store<{shoppingList:{ingredients:Ingredient[] } }>
     )
     { }
@@ -32,7 +32,7 @@ private subscription:Subscription;
   //      }
   //    );
 
-     this.loggingservice.printlog('Hello from ShoppingListComponent ngOnInit');
+     this.loggingService.printlog('Hello from ShoppingListComponent ngOnInit');
 
   }
   editem(index:number){

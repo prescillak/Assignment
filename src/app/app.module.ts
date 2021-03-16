@@ -8,7 +8,6 @@ import { SharedModule } from './shared/shared.module';
 import{CoreModule} from './core.module';
 import{ StoreModule} from '@ngrx/store';
 import{shoppingListReducer} from './shopping-list/store/shopping-list.reducer';
-import { reducers, metaReducers } from './reducers';
 
 @NgModule({
   declarations: [
@@ -21,11 +20,7 @@ import { reducers, metaReducers } from './reducers';
     HttpClientModule,  
     StoreModule.forRoot({shoppingList:shoppingListReducer}),
     SharedModule,
-    CoreModule,
-    StoreModule.forRoot(reducers, {
-      metaReducers
-    }),
-    StoreModule.forRoot({}, {}),
+    CoreModule
   ],
   bootstrap: [AppComponent],
   // providers:[LoggingService]
